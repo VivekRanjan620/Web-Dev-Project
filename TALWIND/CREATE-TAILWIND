@@ -1,0 +1,48 @@
+     --*NOTES*--
+ INSTALLATION:--
+ ->cdn
+ ->framework
+ ->Tailwind cli
+ ->POST CSS
+   1.Check Node
+      +install it 
+
+   2.index.html
+      +style.CSS
+
+   3.check directory
+     +before installation
+      cd--
+
+    4.npm init -y
+
+    5.npm install -D tailwindcss postcss autoprefixer
+
+    6.npx tailwindcss init -p
+
+    7.tailwind.config.js
+      --content:["*"]
+
+    8.@tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+      main css file me isko copy kr denge{style.css}
+
+    9.npm i vite
+
+    10.package.json
+       -script:
+            "scripts": {
+             "dev": "vite"
+              },
+
+     11.extenstion install :-
+         tailwind css init
+
+    12.open terminal same folder
+        ->npm runn dev
+    
+    13.  http://localhost:5173/
+          -> open this link
+
+https://images.unsplash.com/photo-1671375159307-960b2e7fabc7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
