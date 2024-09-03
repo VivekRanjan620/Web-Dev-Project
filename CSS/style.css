@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    /* margin: 5px; */
+    color: chocolate;
+    font-size: 3rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+
+    text-align: center;
+   
+}
+
+.title:hover{
+    text-shadow: 4px 4px 2px #11c644;
+    text-decoration: underline wavy 3px rgba(100, 224, 222, 0.387);
+    text-transform: uppercase;
+    background-color: aquamarine;
+}
+
+.dummytext{
+    margin: 13px;
+    font-size: large;
+    font-weight: 400;
+    text-align: center;
+    color: blueviolet;
+}
+
+.dummytext:hover{
+    color: azure;
+    background-color: black;
+}
+
+.wrapper{
+    margin: 1px;
+    border: 3px solid black;
+}

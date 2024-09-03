@@ -31,7 +31,6 @@
     9.npm i vite
 
     10.package.json
-       -script:
             "scripts": {
              "dev": "vite"
               },
@@ -45,4 +44,3 @@
     13.  http://localhost:5173/
           -> open this link
 
-https://images.unsplash.com/photo-1671375159307-960b2e7fabc7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
