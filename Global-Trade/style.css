@@ -1,94 +1,153 @@
 /* Dark theme colors */
 
 /* Primary theme colors */
-body[data-theme='light_theme'] {
-    --white: #fff;
-    --bg-color: #F8F8F8;
-    --color: #333;
-    --secondary-color: #ff7f57;
-    --icon-bg-color: #333;   
-    --icon-color: #333;
+body[data-theme="light_theme"] {
+  --white: #fff;
+  --bg-color: #f8f8f8;
+  --color: #333;
+  --secondary-color: #ff7f57;
+  --icon-bg-color: #333;
+  --icon-color: #333;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--color);
+  text-align: center;
+}
+
+body[data-theme="dark_theme"] {
+  --white: #fff;
+  --bg-color: #000;
+  --color: #fff;
+  --secondary-color: #ff7f57;
+  --icon-bg-color: #333;
+  --icon-color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    top: 20%;
+    opacity: 0;
   }
-  
-  body {
-    background: var(--bg-color);
-    color: var(--color);
-    text-align: center;
+  to {
+    top: 100;
+    opacity: 1;
   }
-  
-  body[data-theme='dark_theme'] {
-    --white: #fff;
-    --bg-color: #000;
-    --color: #fff;
-    --secondary-color: #ff7f57;
-    --icon-bg-color: #333;   
-    --icon-color: #fff;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    top: 20%;
+    opacity: 0;
   }
-  
-  @keyframes fadeIn {
-    from {top: 20%; opacity: 0;}
-    to {top: 100; opacity: 1;}
+  to {
+    top: 100;
+    opacity: 1;
   }
-  
-  @-webkit-keyframes fadeIn {
-    from {top: 20%; opacity: 0;}
-    to {top: 100; opacity: 1;}
-  }
-  
-  .wrapper {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    animation: fadeIn 1000ms ease;
-    -webkit-animation: fadeIn 1000ms ease;
-    
-  }
-  
-  h1 {
-    font-size: 64px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 0;
-    line-height: 1;
-    font-weight: 700;
-  }
-  
-  .dot {
-    color: var(--secondary-color);
-  }
-  
-  p {
-    text-align: center;
-    margin: 18px;
-    font-family: 'Muli', sans-serif;
-    font-weight: normal;
-  }
-  
-  .icons {
-    text-align: center;
-  }
-  
-  .icons i {
-    color: var(--white);
-    background: var(--icon-bg-color);
-    height: 15px;
-    width: 15px;
-    padding: 13px;
-    margin: 0 10px;
-    border-radius: 50px;
-    border: 2px solid transparent;
-    transition: all 200ms ease;
-    text-decoration: none;
-    position: relative;
-  }
-  
-  .icons i:hover, .icons i:active {
-    color: var(--icon-color);
-    background: none;
-    border-color: var(--icon-bg-color);
-    cursor: pointer !important;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    text-decoration: none;
-  }
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 1000ms ease;
+  -webkit-animation: fadeIn 1000ms ease;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.dot {
+  color: var(--secondary-color);
+}
+
+p {
+  text-align: center;
+  margin: 18px;
+  font-family: "Muli", sans-serif;
+  font-weight: normal;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons i {
+  color: var(--white);
+  background: var(--icon-bg-color);
+  height: 15px;
+  width: 15px;
+  padding: 13px;
+  margin: 0 10px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  transition: all 200ms ease;
+  text-decoration: none;
+  position: relative;
+}
+
+.icons i:hover,
+.icons i:active {
+  color: var(--icon-color);
+  background: none;
+  border-color: var(--icon-bg-color);
+  cursor: pointer !important;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  text-decoration: none;
+}
+
+.bdy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.download-container {
+  text-align: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-container span {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.download-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+
+.download-btn:active {
+  background-color: #1e7e34;
+}
+
+.p-p {
+  display: none;
+}
